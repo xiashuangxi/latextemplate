@@ -4,4 +4,4 @@
 
 | 类型 | 模板 |
 | ------ | ------ |
-| 简历 | [resume.tex]()|
+| 简历 | [resume.tex](https://github.com/xiashuangxi/latextemplate/tree/master/template/resume)|
