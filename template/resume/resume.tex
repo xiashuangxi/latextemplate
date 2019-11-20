@@ -1,0 +1,91 @@
+% 作者：xiashuangxi <xiashuangxi@hotmail.com>
+% 开源协议：MIT
+% 创建时间：2019/11/19
+
+\documentclass[a4paper,9pt]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{geometry}
+
+\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% set list
+\setlist{leftmargin=0mm}
+\setlength{\itemsep}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\parskip}{0pt}
+
+% hide page number
+\thispagestyle{empty}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\normalsize\bfseries 
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumesubheading}[3]{
+    \vspace{-1pt}\item[ ]
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} - #2 & #3
+    \end{tabular*}
+}
+
+\newcommand{\resumeitem}[2]{\item[]\small{#1：#2}}
+\newcommand{\resumesubheadinglists}{\begin{itemize}[leftmargin=0mm]}
+\newcommand{\resumesubheadingliste}{\end{itemize}}
+\newcommand{\resumeitemlists}{\begin{itemize}}
+\newcommand{\resumeitemliste}{\end{itemize}}
+
+\begin{document}
+    \begin{center}
+        \textbf{\Large{欧阳小盒}} \\ 
+        {求职意向：Java开发工程师} - {期望薪资：15k}\\ 
+        {Github：https://www.github.com/xiashuangxi}\\ 
+        {联系电话：13477777777} - {邮箱：xxxxxxxx@hotmail.com}
+    \end{center}
+
+    \section{个人介绍}
+    {这里写一些个人的简介或优势如：2 年专业金融项目开发经验，2 年互联网开发经验。技术方向主要面向 Java。有团队管理经验。}
+
+    \section{教育经历}
+        \resumesubheadinglists
+            \resumesubheading{北京大学}{计算机科学与技术本科}{2011 年 09 月 - 2015 年 06 月}
+        \resumesubheadingliste
+
+    \section{专业技能}
+        \resumesubheadinglists
+            \item[]
+                \resumeitemlists
+                    \resumeitem{开发语言}
+                    {Java、Go、Python、C、C++。}
+                    \resumeitem{框架}
+                    {Spring MVC、Spring Boot、Spring Cloud、Struts2、Spring、Hibernate、MyBatis。 }
+                    \resumeitem{数据库}
+                    {Oracle、MySQL、DB2、Redis。}
+                    \resumeitem{中间件}
+                    {Tomcat、Jetty、Kafka、RabbitMQ。}
+                    \resumeitem{其它}
+                    {熟练应用 SVN、Git、Maven }
+                \resumeitemliste
+        \resumesubheadingliste
+    
+    \section{工作经历}
+        \resumesubheadinglists
+            \resumesubheading{深圳市绿的对科技有限公司}{Java 软件工程师}{2017 年 09 月 - 2019 年 09 月}
+            这里写清楚你在工作中在什么情况下做了什么，取得到了什么成绩，不用全写但一定要突出不拖沓。用数据说话。
+        \resumesubheadingliste
+
+    \section{项目经验}
+        \resumesubheadinglists
+            \resumesubheading{发撒打发打发打发系统}{ Java 开发}{2018 年 07 月 - 2019 年 09 月}
+                \textbf{项目描述：}这里写清楚项目背景，使用的技术架构等信息。
+
+                \textbf{责任描述：}写出你负现的内容取得的成就。
+        \resumesubheadingliste
+\end{document}
